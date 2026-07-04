@@ -1,0 +1,8 @@
+batch_size,epochs,gpus,learning_rate,lr_scheduler_name,model_type,nodes,optimizer,strategy,test_loss,test_acc
+64.0,10.0,2.0,0.001,cosine,EfficientNetB2,1.0,adam,fsdp1,0.3875776529312134,0.8863000273704529
+64.0,10.0,2.0,0.001,step,EfficientNetB2,1.0,adam,fsdp1,0.38276833295822144,0.8799999952316284
+64.0,10.0,2.0,0.001,none,EfficientNetB2,1.0,adam,fsdp1,0.4050825834274292,0.8697999715805054
+64.0,10.0,2.0,0.001,cosine,EfficientNetB2,1.0,rmsprop,fsdp1,0.44431695342063904,0.849399983882904
+64.0,10.0,2.0,0.001,step,EfficientNetB2,1.0,rmsprop,fsdp1,0.458683580160141,0.8446000218391418
+64.0,10.0,2.0,0.001,reduce,EfficientNetB2,1.0,rmsprop,fsdp1,0.5444735288619995,0.8162000179290771
+64.0,10.0,2.0,0.001,none,EfficientNetB2,1.0,rmsprop,fsdp1,0.6094237565994263,0.7896999716758728

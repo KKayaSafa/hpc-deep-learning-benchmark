@@ -1,0 +1,13 @@
+proje/*/lightning_logs/
+proje/*/out/
+proje/*/out2/
+proje/*/out3/
+proje2/*/gpu_logs/
+proje2/*/lightning_logs/
+proje2/*/out/
+proje2/*/out2/
+proje2/*/out3/
+proje3/*/lightning_logs/
+proje3/*/out/
+proje3/*/out2/
+proje3/*/out3/
