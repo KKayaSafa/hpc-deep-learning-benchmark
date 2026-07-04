@@ -18,7 +18,7 @@ Projenin benzersiz yanı, her aşamada farklı teknik yaklaşımlar benimsenmiş
 
 ### Proje Klasör Yapısı
 
-Proje süresince öğrenilen deneyimler doğrultusunda klasör yapısı ihtiyaca göre genişletişmiştir. Her model için üç farklı versiyon oluşturularak, farklı optimizasyon stratejileri test edilmiştir:
+Proje süresince öğrenilen deneyimler doğrultusunda klasör yapısı ihtiyaca göre genişletilmiştir. Her model için üç farklı versiyon oluşturularak, farklı optimizasyon stratejileri test edilmiştir:
 
 ```
 proje/
@@ -63,7 +63,7 @@ proje3/
 └── (aynı klasör yapısı)
 ```
 
-Her proje klasörü kendi içinde organize bir yapı barındırmaktadır: `src/` dizininde Python kodları, `scripts/` dizininde SLURM job scriptleri, `logs/` dizininde eğitim logları, `out/` klasörlerinde farklı GPU konfigürasyonlarının çıktıları ve `results/` dizininde farklı formatlarda deneysel sonuç tabloları ve ekran görüntüleri bulunmaktadır. bulunmaktadır. Raporun sonunda verilen Google Drive bağlantısındaki klasörlerde proje2 ve proje3 için "nvidia-smi" komutlarının ekran görüntüleri de eklenmiştir. 
+Her proje klasörü kendi içinde organize bir yapı barındırmaktadır: `src/` dizininde Python kodları, `scripts/` dizininde SLURM job scriptleri, `logs/` dizininde eğitim logları, `out/` klasörlerinde farklı GPU konfigürasyonlarının çıktıları ve `results/` dizininde farklı formatlarda deneysel sonuç tabloları ve ekran görüntüleri bulunmaktadır. Raporun sonunda verilen Google Drive bağlantısındaki klasörlerde proje2 ve proje3 için "nvidia-smi" komutlarının ekran görüntüleri de eklenmiştir. 
 
 ### Üç Aşamalı Geliştirme Süreci
 
@@ -75,7 +75,7 @@ Bu aşamada en dikkat çekici bulgu, GPU sayısının artmasının her zaman per
 
 **Proje 2: GPU Optimizasyonu ve RMSprop Entegrasyonu (74 Deney)**
 
-İkinci aşamada, ilk projeden alınan dersler doğrultusunda önemli iyileştirmeler yapılmıştır. GPU utilization analizi için bir modül (`gpu_utilization.py`) ana eğitim koduna entegre edilmiştir. Bu sayede TensorBoard üzerinden GPU kullanım istatistikleri detaylı olarak izlenebilmiştir. Ayrıca num_workers parametresi artırılarak veri yükleme süreçleri optimize edilmiş ve kullanılan hızlandırıcılarının verimliliği artırılmıştır.
+İkinci aşamada, ilk projeden alınan dersler doğrultusunda önemli iyileştirmeler yapılmıştır. GPU utilization analizi için bir modül (`gpu_utilization.py`) ana eğitim koduna entegre edilmiştir. Bu sayede TensorBoard üzerinden GPU kullanım istatistikleri detaylı olarak izlenebilmiştir. Ayrıca num_workers parametresi artırılarak veri yükleme süreçleri optimize edilmiş ve kullanılan hızlandırıcıların verimliliği artırılmıştır.
 
 Bu aşamanın en önemli yeniliği RMSprop optimizasyon algoritmasının test edilmesidir. RMSprop'un performansı özellikle ResNet50 modelinde dikkat çekici olmuş, 97.00% doğruluk ile çok başarılı sonuçlar vermiştir. EfficientNetB2 ve VGG19 gibi daha küçük modeller için kaynak verimliliği gözetilerek 2 GPU kullanımına geçilmiştir.
 
@@ -87,7 +87,7 @@ FSDP stratejisi, bellek kullanımında önemli avantajlar sağlamıştır. ResNe
 
 ## Deneysel Sonuçlar ve Kapsamlı Analiz
 
-### proje Deneysel Sonuç Tabloları
+### Proje Deneysel Sonuç Tabloları
 
 ### ResNet50 Deneyleri
 
